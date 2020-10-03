@@ -6,9 +6,9 @@ video = cv2.VideoCapture(0)
 
 while True:
   #Capture the video frame by frame
-  frame = video.read()
+  ret, frame = video.read()
   
   cv2.imshow('frame', frame)
 
-video.release
+video.release()
 cv2.destroyAllWindows() 
