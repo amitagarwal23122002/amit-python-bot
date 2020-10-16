@@ -2,7 +2,8 @@
 import cv2
 import numpy as np
 
-video = cv2.VideoCapture(0)
+video_address = "" # Input Your IP WEBCAM IP address here
+video = cv2.VideoCapture(video_address)
 
 while True:
   #Capture the video frame by frame
